@@ -1,8 +1,11 @@
 # L-PRNet
 
 ## Project Description
-**L-PRNet (Lightweight Position Regression Network) is a lightweight adaptation and re-implementation of PRNet**, a deep learning model designed to perform 3D face reconstruction given only a single RGB image of the face.  
-  
+**L-PRNet (Lightweight Position Regression Network) is a lightweight adaptation and re-implementation of PRNet**, a deep learning model designed to perform 3D face reconstruction given only a single RGB image of the face. 
+<p align="center">
+<img width = "340" height = "340" src = "https://github.com/rendchevi/L-PRNet/blob/master/assets/jodie.gif">
+</p>  
+
 You can check the original PRNet author's repo [here](https://github.com/YadiraF/PRNet) and their very well written paper [here](https://arxiv.org/abs/1803.07835).  
   
 I was so impressed by the author's works while back when it first came out, their solution for 3D face reconstruction is so straight-forward and elegant by creating a novel 
@@ -65,7 +68,7 @@ UV position map is a ```128x128x3``` array where each channel represents 3D (x,y
   
 Below is a sample of the input-output pair.  
 ![IO-Image](https://github.com/rendchevi/L-PRNet/blob/master/assets/io-pair.png)
-  
+
 In the original PRNet paper, the author perform data augmentation process (color scaling, translation, and rotation) which I haven't done it yet. I plan to re-train the model soon with data augmentation and update the pre-trained model in this repo.
 
 ### Network Architecture and Training
